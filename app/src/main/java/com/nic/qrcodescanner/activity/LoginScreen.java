@@ -278,8 +278,8 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
         else {
             getMobileDetails();
         }
-        params.put(AppConstant.KEY_USER_IMEI_NO, "1cd4709abfe8aa90");
-//        params.put(AppConstant.KEY_USER_IMEI_NO, imei);
+//        params.put(AppConstant.KEY_USER_IMEI_NO, "1cd4709abfe8aa90");
+        params.put(AppConstant.KEY_USER_IMEI_NO, imei);
 
         Log.d("params", "" + params);
 

@@ -1,0 +1,21 @@
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">QR Code Scanner</string>
+<string name="hint_password">Password</string>
+<string name="hint_username">UserName</string>
+<string name="btn_login">Login</string>
+<string name="font_circular_medium">circular-medium.ttf</string>
+<string name="font_circular_bold">circular-bold.ttf</string>
+<string name="font_circular_book">circular-book.ttf</string>
+<string name="font_circular_black">circular-black.ttf</string>
+<string name="font_normal">din_pro_light.otf</string>
+<string name="font_poppins_regular">Poppins-Regular.ttf</string>
+<string name="font_poppins_semibold">Poppins-SemiBold.ttf</string>
+<string name="font_poppins_medium">Poppins-Medium.ttf</string>
+<string name="font_poppins_light">Poppins-Light.ttf</string>
+<string name="font_poppins_bold">Poppins-Bold.ttf</string>
+<string name="no_internet">Your internet seems to be offline!</string>
+<string name="init_vector">2SN22SkJGDyOAXUU</string>
+
+</resources>
+

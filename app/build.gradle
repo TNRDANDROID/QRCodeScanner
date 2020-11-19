@@ -45,7 +45,7 @@ android {
             debuggable true
             minifyEnabled false
             signingConfig signingConfigs.debug
-            resValue "string", "COMMON_URL", "https://tnhrce.gov.in/templedemo/webservice/qrcode_reader.php"
+            resValue "string", "COMMON_URL", "https://tnhrce.gov.in/webservice/qrcode_reader.php"
             resValue "string", "TNHRCE_HOST_NAME", "tnhrce.gov.in"
             resValue "string", "SUB_DOMAIN", "www.tnhrce.gov.in"
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
@@ -55,7 +55,7 @@ android {
             minifyEnabled false
             shrinkResources false
             signingConfig signingConfigs.debug
-            resValue "string", "COMMON_URL", "https://tnhrce.gov.in/templedemo/webservice/qrcode_reader.php"
+            resValue "string", "COMMON_URL", "https://tnhrce.gov.in/webservice/qrcode_reader.php"
             resValue "string", "TNHRCE_HOST_NAME", "tnhrce.gov.in"
             resValue "string", "SUB_DOMAIN", "www.tnhrce.gov.in"
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'

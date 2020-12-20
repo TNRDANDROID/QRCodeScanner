@@ -30,7 +30,7 @@ public class AppConstant {
     public static String TEMPLE_LOGO = "temple_logo";
     public static String LEVEL_CODE = "level_code";
     public static String DESIGNATION_DESC = "designation_dec";
-    public static String LOGIN_ID = "loginid";
+    public static String LOGINID = "loginid";
     public static String KEY_TOKEN_ID = "tokenid";
     public static String KEY_TEMPLE_ID = "templeid";
 

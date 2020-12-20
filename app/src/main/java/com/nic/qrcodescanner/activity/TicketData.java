@@ -36,6 +36,7 @@ import java.util.Map;
 public class TicketData extends AppCompatActivity implements Api.ServerResponseListener {
     private ActivityTicketDataBinding activityTicketDataBinding;
     ArrayList<QrcodePojo> qrcodePojos;
+    Map<String, String> verifyTicketParams;
 
     private QrCodeUserDataAdapter qrCodeUserDataAdapter;
 
@@ -76,13 +77,15 @@ public class TicketData extends AppCompatActivity implements Api.ServerResponseL
 
     public void verifyTheTicket() {
         if (Utils.isOnline()) {
-            Map<String, String> verifyTicketParams = new HashMap<>();
+            verifyTicketParams = new HashMap<>();
             verifyTicketParams.put(AppConstant.KEY_ACK_NO, qrcodePojos.get(0).getAckid());
             verifyTicketParams.put(AppConstant.KEY_SERVICE_ID, AppConstant.TICKET_UPDATE);
-            verifyTicketParams.put(AppConstant.KEY_TEMPLE_ID, String.valueOf(getIntent().getStringExtra("temple_id")));
-            verifyTicketParams.put(AppConstant.KEY_TOKEN_ID, getIntent().getStringExtra("tokenid"));
-
-            Log.d("VerifyParam",""+verifyTicketParams);
+//            if ((getIntent().getStringExtra("temple_id") != null) && getIntent().getStringExtra("tokenid") != null && getIntent().getStringExtra("loginid") != null) {
+                verifyTicketParams.put(AppConstant.KEY_TEMPLE_ID, String.valueOf(getIntent().getStringExtra("temple_id")));
+                verifyTicketParams.put(AppConstant.KEY_TOKEN_ID, getIntent().getStringExtra("tokenid"));
+                verifyTicketParams.put(AppConstant.LOGINID, (getIntent().getStringExtra("loginid")));
+//            }
+            Log.d("VerifyParam", "" + verifyTicketParams);
 
             new ApiService(this).makeRequest("VerifyTicket", Api.Method.POST, UrlGenerator.getCommonUrl(), verifyTicketParams, "not cache", this);
         } else {

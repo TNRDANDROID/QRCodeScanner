@@ -207,6 +207,7 @@ public class HomePage extends AppCompatActivity implements MyDialog.myOnClickLis
         intent.putExtra("username", loginPojos.get(0).getUsername());
         intent.putExtra("temple_id", String.valueOf(loginPojos.get(0).getTemple_id()));
         intent.putExtra("tokenid", loginPojos.get(0).getTokenid());
+        intent.putExtra("loginid", String.valueOf(loginPojos.get(0).getLoginid()));
         intent.putExtra("qrcode_Pojo", qrcodePojos);
         startActivity(intent);
         finish();
